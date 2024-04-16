@@ -1,0 +1,27 @@
+<h3>Lista</h3>
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Email</th>
+        <th scope="col">Actualizar</th>
+        <th scope="col">Eliminar</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let da of data">
+        <th scope="row">{{da.id}}</th>
+        <td>{{da.nombre}}</td>
+        <td>{{da.email}}</td>
+        <td>
+          <button type="button" class="btn btn-warning" aria-label="Close">Actualizar</button>
+        </td>
+        <td>
+          <button type="button" class="btn btn-danger" aria-label="Close">Eliminar</button>
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>

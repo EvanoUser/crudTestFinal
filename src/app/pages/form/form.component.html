@@ -1,0 +1,23 @@
+<h5>Formulario de ingreso</h5>
+<div >
+  <form (ngSubmit)="agregarUsuario(formulario)" #formulario="ngForm">
+    <div class="mb-3">
+      <label for="id" class="form-label">Id</label>
+      <input type="number" class="form-control" id="id"  name="id"  [(ngModel)]="id">
+      
+    </div>
+      <div class="mb-3">  
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="nombre">
+        
+      </div>
+      <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" name="email" [(ngModel)]="email">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+     
+      <button type="submit" class="btn btn-primary" >Enviar</button>
+    </form>
+</div>
+
